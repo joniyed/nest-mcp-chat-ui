@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
   background: white;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
@@ -141,15 +141,16 @@ body {
   display: flex;
   gap: 0.75rem;
   animation: slideIn 0.3s ease-out;
+  width: 100%;
 }
 
 .message.user {
   flex-direction: row-reverse;
-  align-self: flex-end;
+  width: 100%;
 }
 
 .message.assistant {
-  align-self: flex-start;
+  width: 100%;
 }
 
 @keyframes slideIn {
@@ -185,7 +186,7 @@ body {
 
 .message-body {
   flex: 1;
-  max-width: calc(100% - 60px);
+  min-width: 0;
 }
 
 .message-content {
@@ -212,6 +213,7 @@ body {
   box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
   font-size: 0.95rem;
   line-height: 1.5;
+  width: 100%;
 }
 
 /* System messages */
@@ -224,6 +226,7 @@ body {
   border: 1px solid #e2e8f0;
   font-size: 0.95rem;
   line-height: 1.5;
+  width: 100%;
 }
 
 .system-message.error {
@@ -239,7 +242,7 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   border: 1px solid #e2e8f0;
-  max-width: 600px;
+  width: 100%;
 }
 
 .response-header {
