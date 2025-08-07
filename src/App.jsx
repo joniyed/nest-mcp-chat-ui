@@ -20,6 +20,8 @@ export default function App() {
       // Assuming response contains the JSON result you showed in the screenshot
       const answer = JSON.stringify(res.data['Query Result'], null, 2);
 
+
+
       // Add backend response to chat
       setMessages(prev => [...prev, { role: 'bot', text: answer }]);
     } catch (error) {
